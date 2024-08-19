@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Analysis Result</title>
+  </head>
+  <body>
+    <h1>Extracted Text</h1>
+    <pre>{{ text }}</pre>
+    <h2>Named Entities</h2>
+    <ul>
+      {% for entity, label in entities %}
+        <li>{{ entity }} ({{ label }})</li>
+      {% endfor %}
+    </ul>
+    <a href="/">Upload Another Document</a>
+  </body>
+</html>
